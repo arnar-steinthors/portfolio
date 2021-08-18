@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/globals.dart';
 
 enum Languages {
   icelandic,
@@ -11,6 +12,12 @@ enum Languages {
 
 class MenuController extends GetxController {
   RxBool darkTheme = false.obs;  // todo: initial value should be from local storage
+
+  @override
+  void onInit() {
+    super.onInit();
+    _setInitLocale();
+  }
 
   void changeTheme() {
     darkTheme.value = !darkTheme.value;
@@ -26,7 +33,24 @@ class MenuController extends GetxController {
     return darkTheme.value ? Icons.dark_mode : Icons.light_mode;
   }
 
-  set setLocale(Languages languages) {
+  void _setInitLocale() {
+    // attempt to get a saved locale
+    String? localeCode = Globals().getStorage(LOCALE);
+    if (localeCode != null) {
+      Get.updateLocale(Locale(localeCode, ''));
+      return;
+    }
+    // return the device locale or null
+    Locale? locale = Get.deviceLocale;
+    if (locale != null) Get.updateLocale(locale);
+    else Get.updateLocale(Locale('is', ''));
+  }
+
+  Future<void> _storageSetLocale(String value) async {
+    await Globals().writeToStorage(LOCALE, value);
+  }
+
+  set changeLocale(Languages languages) {
     String languageCode;
     switch (languages) {
       case Languages.english:
@@ -39,6 +63,7 @@ class MenuController extends GetxController {
         languageCode = 'is';
         break;
     }
+    _storageSetLocale(languageCode);
     Get.updateLocale(Locale(languageCode, ''));
   }
 

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/generated/l10n.dart';
-import 'package:portfolio/views/home_page/controllers/home_page_controller.dart';
 import 'package:portfolio/views/home_page/controllers/menuController.dart';
 
 class SlideUpMenu extends StatefulWidget {
@@ -82,17 +81,17 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
         children: [
           SimpleDialogOption(
             child: Text("Icelandic"),
-            onPressed: () => _controller.setLocale = Languages.icelandic,
+            onPressed: () => _controller.changeLocale = Languages.icelandic,
           ),
           Divider(),
           SimpleDialogOption(
             child: Text("English"),
-            onPressed: () => _controller.setLocale = Languages.english,
+            onPressed: () => _controller.changeLocale = Languages.english,
           ),
           Divider(),
           SimpleDialogOption(
             child: Text("Polish"),
-            onPressed: () => _controller.setLocale = Languages.polish,
+            onPressed: () => _controller.changeLocale = Languages.polish,
           ),
         ],
       ),

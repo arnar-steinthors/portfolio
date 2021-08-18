@@ -42,6 +42,7 @@ class LightTheme {
     final String fontFamily = 'Poppins';
 
     return ThemeData(
+      // todo: implement dividerTheme()
       fontFamily: fontFamily,
       colorScheme: ColorScheme.light(
         primary: Color(0xFF0E7DE3),
