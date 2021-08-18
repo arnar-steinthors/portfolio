@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/views/home_page/components/slideUpMenu.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,7 +19,12 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-
+              Text(S().lightMode),
+              Text(S().darkMode),
+              Text(S().languages),
+              Text(S.of(context).languages),
+              Text(S.of(context).darkMode),
+              Text(S.current.darkMode),
             ],
           ),
         ),

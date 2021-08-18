@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/views/home_page/controllers/home_page_controller.dart';
 import 'package:portfolio/views/home_page/controllers/menuController.dart';
 
@@ -39,7 +40,8 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  _themeTile()
+                  _themeTile(),
+                  _languageTile(context),
                 ],
               ),
             );
@@ -52,6 +54,48 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
       secondary: Icon(_controller.themeIcon),
       onChanged: (_) => _controller.changeTheme(),
       value: _controller.darkTheme.value,
+    );
+  }
+
+  Widget _languageTile(BuildContext context) {
+    return ListTile(
+      leading: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxWidth: 33,
+          maxHeight: 33,
+          minWidth: 33,
+          minHeight: 33
+        ),
+        child: _controller.languageFlag,
+      ),
+      title: Text(S().languages),
+      onTap: () => _languageDialog(context),
+    );
+  }
+
+
+  void _languageDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (_) => SimpleDialog(
+        title: Text(S().selectLanguage),
+        children: [
+          SimpleDialogOption(
+            child: Text("Icelandic"),
+            onPressed: () => _controller.setLocale = Languages.icelandic,
+          ),
+          Divider(),
+          SimpleDialogOption(
+            child: Text("English"),
+            onPressed: () => _controller.setLocale = Languages.english,
+          ),
+          Divider(),
+          SimpleDialogOption(
+            child: Text("Polish"),
+            onPressed: () => _controller.setLocale = Languages.polish,
+          ),
+        ],
+      ),
     );
   }
 }
