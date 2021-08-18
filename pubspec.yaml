@@ -26,7 +26,6 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
-
   uses-material-design: true
   fonts:
     - family: Poppins
@@ -36,5 +35,9 @@ flutter:
           style: italic
         - asset: fonts/Poppins-Bold.ttf
           weight: 700
+  assets:
+    - assets/
+#    - assets/images/person_illustration.png
+#    - assets/images/phone_illustration.png
 flutter_intl:
   enabled: true

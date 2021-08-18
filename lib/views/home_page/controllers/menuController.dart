@@ -29,6 +29,7 @@ class MenuController extends GetxController {
 
   set changeLocale(Languages language) {
     L10nService().changeLocale(language);
+    Get.back();
   }
 
   SvgPicture get languageFlag {

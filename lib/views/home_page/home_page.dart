@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/generated/l10n.dart';
+import 'package:portfolio/views/home_page/components/page_header.dart';
 import 'package:portfolio/views/home_page/components/slideUpMenu.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,15 +18,14 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Text(S().lightMode),
-              Text(S().darkMode),
-              Text(S().languages),
-              Text(S.of(context).languages),
-              Text(S.of(context).darkMode),
-              Text(S.current.darkMode),
-            ],
+          child: Container(
+            margin: EdgeInsets.only(right: 12, left: 12),
+            width: double.infinity,
+            child: Column(
+              children: [
+                PageHeader()
+              ],
+            ),
           ),
         ),
       ),
