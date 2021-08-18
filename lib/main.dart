@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:portfolio/generated/l10n.dart';
-import 'package:portfolio/globals.dart';
+import 'package:portfolio/services/l10nService.dart';
+import 'package:portfolio/services/themeService.dart';
 import 'package:portfolio/themes.dart';
-import 'package:portfolio/views/home_page/controllers/menuController.dart';
 import 'package:portfolio/views/home_page/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // load storage into globals
-  await Globals().setStorage();
+  await GetStorage.init();
   runApp(MyApp());
 }
 
@@ -21,11 +21,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Verkefni Arnars',
       // theme config
-      themeMode: ThemeMode.light,
+      themeMode: ThemeService().theme,
       darkTheme: DarkTheme.darkTheme,
       theme: LightTheme.lightTheme,
       // localization config
-      // locale: Get.deviceLocale,
+      locale: L10nService().locale,
       // fallbackLocale: Locale('is'),
       localizationsDelegates: [
         S.delegate,
