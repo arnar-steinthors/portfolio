@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio/services/l10n_service.dart';
 import 'package:portfolio/services/theme_service.dart';
 
+// todo: this file should be moved to a shared_ folder
 
 class MenuController extends GetxController {
   RxBool darkTheme = ThemeService().loadFromStorage().obs;
@@ -14,8 +15,8 @@ class MenuController extends GetxController {
     ThemeService().changeTheme();
   }
 
-  String get themeString {
-    return darkTheme.value ? S().darkMode : S().lightMode;
+  String themeString(BuildContext context) {
+    return darkTheme.value ? S.of(context).darkMode : S.of(context).lightMode;
   }
 
   IconData get themeIcon {

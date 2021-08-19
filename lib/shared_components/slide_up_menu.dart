@@ -40,7 +40,7 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  _themeTile(),
+                  _themeTile(context),
                   _languageTile(context),
                 ],
               ),
@@ -48,9 +48,9 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
           });
   }
 
-  Widget _themeTile() {
+  Widget _themeTile(BuildContext context) {
     return SwitchListTile(
-      title: Text(_controller.themeString),
+      title: Text(_controller.themeString(context)),
       secondary: Icon(_controller.themeIcon),
       onChanged: (_) => _controller.changeTheme(),
       value: _controller.darkTheme.value,
@@ -68,7 +68,7 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
         ),
         child: _controller.languageFlag,
       ),
-      title: Text(S().languages),
+      title: Text(S.of(context).languages),
       onTap: () => _languageDialog(context),
     );
   }
@@ -78,7 +78,7 @@ class _SlideUpMenuState extends State<SlideUpMenu> {
     showDialog(
       context: context,
       builder: (_) => SimpleDialog(
-        title: Text(S().selectLanguage),
+        title: Text(S.of(context).selectLanguage),
         children: [
           SimpleDialogOption(
             child: Text("Icelandic"),

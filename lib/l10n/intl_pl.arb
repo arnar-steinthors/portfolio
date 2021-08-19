@@ -9,5 +9,14 @@
   "userExperience": "doświadczenie użytkownika",
   "notifications": "powiadomienia",
   "userInterface": "interfejsy użytkownika",
-  "design": "projekt"
+  "design": "projekt",
+  "singleTicket": "Pojedynczy bilet",
+  "singleFare": "Opłata jednorazowa",
+  "adult": "Dorosły",
+  "youngAdults": "Młodzi dorośli",
+  "children": "Dzieci",
+  "elderly": "Osoby starsze",
+  "credit": "Kredyt",
+  "purchase": "Zakup",
+  "timePeriod": "Okres czasu"
 }

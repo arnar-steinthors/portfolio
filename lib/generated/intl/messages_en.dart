@@ -21,17 +21,27 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "apps": MessageLookupByLibrary.simpleMessage("apps"),
+        "adult": MessageLookupByLibrary.simpleMessage("Adult"),
+        "apps": MessageLookupByLibrary.simpleMessage("Apps"),
+        "children": MessageLookupByLibrary.simpleMessage("Children"),
+        "credit": MessageLookupByLibrary.simpleMessage("Credit"),
         "darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
-        "design": MessageLookupByLibrary.simpleMessage("design"),
+        "design": MessageLookupByLibrary.simpleMessage("Design"),
+        "elderly": MessageLookupByLibrary.simpleMessage("Elderly"),
         "iMake": MessageLookupByLibrary.simpleMessage("I make"),
         "languages": MessageLookupByLibrary.simpleMessage("Languages"),
         "lightMode": MessageLookupByLibrary.simpleMessage("Light Mode"),
-        "notifications": MessageLookupByLibrary.simpleMessage("notifications"),
+        "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "purchase": MessageLookupByLibrary.simpleMessage("Purchase"),
         "selectLanguage":
             MessageLookupByLibrary.simpleMessage("Select Language"),
+        "singleFare": MessageLookupByLibrary.simpleMessage("Single fare"),
+        "singleTicket": MessageLookupByLibrary.simpleMessage("Single ticket"),
+        "timePeriod": MessageLookupByLibrary.simpleMessage("Time Period"),
         "userExperience":
-            MessageLookupByLibrary.simpleMessage("user experience"),
-        "userInterface": MessageLookupByLibrary.simpleMessage("user interfaces")
+            MessageLookupByLibrary.simpleMessage("User Experience"),
+        "userInterface":
+            MessageLookupByLibrary.simpleMessage("User Interfaces"),
+        "youngAdults": MessageLookupByLibrary.simpleMessage("Young adults")
       };
 }

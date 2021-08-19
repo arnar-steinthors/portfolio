@@ -21,17 +21,26 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "adult": MessageLookupByLibrary.simpleMessage("Fullorðinn"),
         "apps": MessageLookupByLibrary.simpleMessage("smáforrit"),
+        "children": MessageLookupByLibrary.simpleMessage("Börn"),
+        "credit": MessageLookupByLibrary.simpleMessage("Inneign"),
         "darkMode": MessageLookupByLibrary.simpleMessage("dökkt útlit"),
         "design": MessageLookupByLibrary.simpleMessage("hönnun"),
+        "elderly": MessageLookupByLibrary.simpleMessage("Aldraðir"),
         "iMake": MessageLookupByLibrary.simpleMessage("Ég geri"),
         "languages": MessageLookupByLibrary.simpleMessage("tungumál"),
         "lightMode": MessageLookupByLibrary.simpleMessage("ljóst útlit"),
         "notifications": MessageLookupByLibrary.simpleMessage("tilkynningar"),
+        "purchase": MessageLookupByLibrary.simpleMessage("Kaupa"),
         "selectLanguage":
             MessageLookupByLibrary.simpleMessage("Veldu Tungumál"),
+        "singleFare": MessageLookupByLibrary.simpleMessage("Stakt fargjald"),
+        "singleTicket": MessageLookupByLibrary.simpleMessage("Stakur Miði"),
+        "timePeriod": MessageLookupByLibrary.simpleMessage("Tímabil"),
         "userExperience":
             MessageLookupByLibrary.simpleMessage("notendaupplifun"),
-        "userInterface": MessageLookupByLibrary.simpleMessage("notendaviðmót")
+        "userInterface": MessageLookupByLibrary.simpleMessage("notendaviðmót"),
+        "youngAdults": MessageLookupByLibrary.simpleMessage("Ungmenni")
       };
 }

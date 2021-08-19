@@ -21,17 +21,28 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "adult": MessageLookupByLibrary.simpleMessage("Dorosły"),
         "apps": MessageLookupByLibrary.simpleMessage("aplikacja"),
+        "children": MessageLookupByLibrary.simpleMessage("Dzieci"),
+        "credit": MessageLookupByLibrary.simpleMessage("Kredyt"),
         "darkMode": MessageLookupByLibrary.simpleMessage("Tryb ciemny"),
         "design": MessageLookupByLibrary.simpleMessage("projekt"),
+        "elderly": MessageLookupByLibrary.simpleMessage("Osoby starsze"),
         "iMake": MessageLookupByLibrary.simpleMessage("ja robię"),
         "languages": MessageLookupByLibrary.simpleMessage("Języki"),
         "lightMode": MessageLookupByLibrary.simpleMessage("Tryb światła"),
         "notifications": MessageLookupByLibrary.simpleMessage("powiadomienia"),
+        "purchase": MessageLookupByLibrary.simpleMessage("Zakup"),
         "selectLanguage": MessageLookupByLibrary.simpleMessage("Wybierz język"),
+        "singleFare":
+            MessageLookupByLibrary.simpleMessage("Opłata jednorazowa"),
+        "singleTicket":
+            MessageLookupByLibrary.simpleMessage("Pojedynczy bilet"),
+        "timePeriod": MessageLookupByLibrary.simpleMessage("Okres czasu"),
         "userExperience":
             MessageLookupByLibrary.simpleMessage("doświadczenie użytkownika"),
         "userInterface":
-            MessageLookupByLibrary.simpleMessage("interfejsy użytkownika")
+            MessageLookupByLibrary.simpleMessage("interfejsy użytkownika"),
+        "youngAdults": MessageLookupByLibrary.simpleMessage("Młodzi dorośli")
       };
 }

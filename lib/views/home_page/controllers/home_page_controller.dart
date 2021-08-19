@@ -1,9 +1,7 @@
 import 'package:get/get.dart';
-
-enum DropdownEnum {
-  settings,
-}
+import 'package:portfolio/views/tickets/tickets.dart';
 
 class HomePageController extends GetxController {
 
+  void navigateToTickets() => Get.to(() => Tickets());
 }

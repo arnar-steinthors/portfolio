@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/views/home_page/components/page_header.dart';
-import 'package:portfolio/views/home_page/components/slide_up_menu.dart';
+import '../../shared_components/slide_up_menu.dart';
 
 class HomePage extends StatefulWidget {
   @override

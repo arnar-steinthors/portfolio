@@ -5,9 +5,18 @@
   "darkMode": "Dark Mode",
   "selectLanguage": "Select Language",
   "iMake": "I make",
-  "apps": "apps",
-  "userExperience": "user experience",
-  "notifications": "notifications",
-  "userInterface": "user interfaces",
-  "design": "design"
+  "apps": "Apps",
+  "userExperience": "User Experience",
+  "notifications": "Notifications",
+  "userInterface": "User Interfaces",
+  "design": "Design",
+  "singleTicket": "Single ticket",
+  "singleFare": "Single fare",
+  "adult": "Adult",
+  "youngAdults": "Young adults",
+  "children": "Children",
+  "elderly": "Elderly",
+  "credit": "Credit",
+  "purchase": "Purchase",
+  "timePeriod": "Time Period"
 }

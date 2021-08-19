@@ -100,51 +100,141 @@ class S {
     );
   }
 
-  /// `apps`
+  /// `Apps`
   String get apps {
     return Intl.message(
-      'apps',
+      'Apps',
       name: 'apps',
       desc: '',
       args: [],
     );
   }
 
-  /// `user experience`
+  /// `User Experience`
   String get userExperience {
     return Intl.message(
-      'user experience',
+      'User Experience',
       name: 'userExperience',
       desc: '',
       args: [],
     );
   }
 
-  /// `notifications`
+  /// `Notifications`
   String get notifications {
     return Intl.message(
-      'notifications',
+      'Notifications',
       name: 'notifications',
       desc: '',
       args: [],
     );
   }
 
-  /// `user interfaces`
+  /// `User Interfaces`
   String get userInterface {
     return Intl.message(
-      'user interfaces',
+      'User Interfaces',
       name: 'userInterface',
       desc: '',
       args: [],
     );
   }
 
-  /// `design`
+  /// `Design`
   String get design {
     return Intl.message(
-      'design',
+      'Design',
       name: 'design',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Single ticket`
+  String get singleTicket {
+    return Intl.message(
+      'Single ticket',
+      name: 'singleTicket',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Single fare`
+  String get singleFare {
+    return Intl.message(
+      'Single fare',
+      name: 'singleFare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adult`
+  String get adult {
+    return Intl.message(
+      'Adult',
+      name: 'adult',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Young adults`
+  String get youngAdults {
+    return Intl.message(
+      'Young adults',
+      name: 'youngAdults',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Children`
+  String get children {
+    return Intl.message(
+      'Children',
+      name: 'children',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Elderly`
+  String get elderly {
+    return Intl.message(
+      'Elderly',
+      name: 'elderly',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Credit`
+  String get credit {
+    return Intl.message(
+      'Credit',
+      name: 'credit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Purchase`
+  String get purchase {
+    return Intl.message(
+      'Purchase',
+      name: 'purchase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Time Period`
+  String get timePeriod {
+    return Intl.message(
+      'Time Period',
+      name: 'timePeriod',
       desc: '',
       args: [],
     );

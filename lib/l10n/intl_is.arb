@@ -9,5 +9,14 @@
   "userExperience": "notendaupplifun",
   "notifications": "tilkynningar",
   "userInterface": "notendaviðmót",
-  "design": "hönnun"
+  "design": "hönnun",
+  "singleTicket": "Stakur Miði",
+  "singleFare": "Stakt fargjald",
+  "adult": "Fullorðinn",
+  "youngAdults": "Ungmenni",
+  "children": "Börn",
+  "elderly": "Aldraðir",
+  "credit": "Inneign",
+  "purchase": "Kaupa",
+  "timePeriod": "Tímabil"
 }
