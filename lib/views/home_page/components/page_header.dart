@@ -43,7 +43,9 @@ class _PageHeaderState extends State<PageHeader> {
 
   Widget _imageSubText(BuildContext context) {
     TextStyle style = TextStyle(fontSize: 25);
+    // todo: reset animation on context change
     return AnimatedTextKit(
+      repeatForever: true,
       animatedTexts: [
         TyperAnimatedText(S.of(context).notifications, textStyle: style),
         TyperAnimatedText(S.of(context).userExperience, textStyle: style),
