@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/services/baseService.dart';
+import 'package:portfolio/services/base_service.dart';
 
 
 enum Languages {
@@ -20,7 +20,7 @@ class L10nService extends BaseService {
   String loadFromStorage() => super.loadFromStorage();
 
   /// get locale from memory
-  Locale get locale => Locale(this.loadFromStorage(), '');
+  Locale get locale => Locale(loadFromStorage(), '');
 
   void changeLocale(Languages languages) {
     String languageCode;
@@ -35,7 +35,7 @@ class L10nService extends BaseService {
         languageCode = 'is';
         break;
     }
-    this.saveToStorage(languageCode);
+    saveToStorage(languageCode);
     Get.updateLocale(Locale(languageCode, ''));
   }
 }

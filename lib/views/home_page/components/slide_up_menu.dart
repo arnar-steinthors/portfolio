@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/generated/l10n.dart';
-import 'package:portfolio/services/l10nService.dart';
-import 'package:portfolio/views/home_page/controllers/menuController.dart';
+import 'package:portfolio/services/l10n_service.dart';
+import 'package:portfolio/views/home_page/controllers/menu_controller.dart';
 
 class SlideUpMenu extends StatefulWidget {
   @override

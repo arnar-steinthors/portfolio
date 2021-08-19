@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/services/baseService.dart';
+import 'package:portfolio/services/base_service.dart';
 
 class ThemeService extends BaseService {
   @override
@@ -13,11 +13,11 @@ class ThemeService extends BaseService {
   bool loadFromStorage() => super.loadFromStorage();
 
   /// returns a dark or light theme based on the stored value
-  ThemeMode get theme => this.loadFromStorage() ? ThemeMode.dark : ThemeMode.light;
+  ThemeMode get theme => loadFromStorage() ? ThemeMode.dark : ThemeMode.light;
 
   /// flip the current theme
   void changeTheme() {
-    Get.changeThemeMode(this.loadFromStorage() ? ThemeMode.light : ThemeMode.dark);
-    saveToStorage(!this.loadFromStorage());
+    Get.changeThemeMode(loadFromStorage() ? ThemeMode.light : ThemeMode.dark);
+    saveToStorage(!loadFromStorage());
   }
 }

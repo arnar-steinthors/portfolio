@@ -1,6 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:portfolio/animations/hovering_image.dart';
 import 'package:portfolio/generated/l10n.dart';
 
@@ -19,6 +18,7 @@ class _PageHeaderState extends State<PageHeader> {
           HoveringImage(),
           _imageText(),
           _imageSubText(),
+          _toBuyTicketButton(),
         ],
       ),
     );
@@ -44,6 +44,24 @@ class _PageHeaderState extends State<PageHeader> {
         TyperAnimatedText(S().userInterface, textStyle: style),
         TyperAnimatedText(S().apps, textStyle: style),
       ],
+    );
+  }
+
+  Widget _toBuyTicketButton() {
+    return Container(
+      margin: EdgeInsets.all(10),
+      height: 50,
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: () => null,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("ticket copy"),
+            Icon(Icons.navigate_next)
+          ],
+        ),
+      ),
     );
   }
 }

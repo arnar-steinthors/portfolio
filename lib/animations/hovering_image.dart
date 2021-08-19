@@ -7,7 +7,7 @@ class HoveringImage extends StatefulWidget {
 
 class _HoveringImageState extends State<HoveringImage> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<Offset> _animation = Tween(
+  late final Animation<Offset> _animation = Tween(
     begin: Offset.zero,
     end: Offset(0, 0.08),
   ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));

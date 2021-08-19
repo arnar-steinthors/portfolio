@@ -3,8 +3,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:portfolio/generated/l10n.dart';
-import 'package:portfolio/services/l10nService.dart';
-import 'package:portfolio/services/themeService.dart';
+import 'package:portfolio/services/l10n_service.dart';
+import 'package:portfolio/services/theme_service.dart';
 import 'package:portfolio/themes.dart';
 import 'package:portfolio/views/home_page/home_page.dart';
 
