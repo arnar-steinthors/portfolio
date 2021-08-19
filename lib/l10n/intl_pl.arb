@@ -3,5 +3,11 @@
   "languages": "Języki",
   "lightMode": "Tryb światła",
   "darkMode": "Tryb ciemny",
-  "selectLanguage": "Wybierz język"
+  "selectLanguage": "Wybierz język",
+  "iMake": "ja robię",
+  "apps": "aplikacja",
+  "userExperience": "doświadczenie użytkownika",
+  "notifications": "powiadomienia",
+  "userInterface": "interfejsy użytkownika",
+  "design": "projekt"
 }

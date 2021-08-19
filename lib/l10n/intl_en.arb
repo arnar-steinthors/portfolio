@@ -3,5 +3,11 @@
   "languages": "Languages",
   "lightMode": "Light Mode",
   "darkMode": "Dark Mode",
-  "selectLanguage": "Select Language"
+  "selectLanguage": "Select Language",
+  "iMake": "I make",
+  "apps": "apps",
+  "userExperience": "user experience",
+  "notifications": "notifications",
+  "userInterface": "user interfaces",
+  "design": "design"
 }

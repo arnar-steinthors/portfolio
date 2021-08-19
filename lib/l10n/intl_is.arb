@@ -3,5 +3,11 @@
   "languages": "tungumál",
   "lightMode": "ljóst útlit",
   "darkMode": "dökkt útlit",
-  "selectLanguage": "Veldu Tungumál"
+  "selectLanguage": "Veldu Tungumál",
+  "iMake": "Ég geri",
+  "apps": "smáforrit",
+  "userExperience": "notendaupplifun",
+  "notifications": "tilkynningar",
+  "userInterface": "notendaviðmót",
+  "design": "hönnun"
 }

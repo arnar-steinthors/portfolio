@@ -89,6 +89,66 @@ class S {
       args: [],
     );
   }
+
+  /// `I make`
+  String get iMake {
+    return Intl.message(
+      'I make',
+      name: 'iMake',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `apps`
+  String get apps {
+    return Intl.message(
+      'apps',
+      name: 'apps',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `user experience`
+  String get userExperience {
+    return Intl.message(
+      'user experience',
+      name: 'userExperience',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `notifications`
+  String get notifications {
+    return Intl.message(
+      'notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `user interfaces`
+  String get userInterface {
+    return Intl.message(
+      'user interfaces',
+      name: 'userInterface',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `design`
+  String get design {
+    return Intl.message(
+      'design',
+      name: 'design',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

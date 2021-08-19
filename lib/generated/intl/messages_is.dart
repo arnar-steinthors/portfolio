@@ -21,9 +21,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "apps": MessageLookupByLibrary.simpleMessage("smáforrit"),
         "darkMode": MessageLookupByLibrary.simpleMessage("dökkt útlit"),
+        "design": MessageLookupByLibrary.simpleMessage("hönnun"),
+        "iMake": MessageLookupByLibrary.simpleMessage("Ég geri"),
         "languages": MessageLookupByLibrary.simpleMessage("tungumál"),
         "lightMode": MessageLookupByLibrary.simpleMessage("ljóst útlit"),
-        "selectLanguage": MessageLookupByLibrary.simpleMessage("Veldu Tungumál")
+        "notifications": MessageLookupByLibrary.simpleMessage("tilkynningar"),
+        "selectLanguage":
+            MessageLookupByLibrary.simpleMessage("Veldu Tungumál"),
+        "userExperience":
+            MessageLookupByLibrary.simpleMessage("notendaupplifun"),
+        "userInterface": MessageLookupByLibrary.simpleMessage("notendaviðmót")
       };
 }
